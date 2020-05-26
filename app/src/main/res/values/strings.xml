@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Postage Tracker</string>
+    <string name="register">Register</string>
+    <string name="alreadySignIn">Already have an account? Sign In</string>
+    <string name="verify">Verify Mobile</string>
+    <string name="enterToVerify">Enter the Verification code was sent to:</string>
+    <string name="mobileNumber">+61 491 570 156</string>
+    <string name="resendText">Resend Code</string>
+    <string name="next">Next</string>
+    <string name="accountInfo">Account Info</string>
+    <string name="firstName">First Name</string>
+    <string name="firstNameHint">Marc Andrew</string>
+    <string name="lastName">Last Name</string>
+    <string name="lastNameHint">Davis</string>
+    <string name="email">Email Address</string>
+    <string name="emailHint">markdavis@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="repeatPass">Repeat Password</string>
+    <string name="login">Login</string>
+    <string name="mobileText">Mobile Number</string>
+
+    //Check Email Screen
+    <string name="check_mail">Check your email</string>
+    <string name="email_sent">
+        An email was sent to markdavis@gmail.com.\n
+        To continue your registration please follow\n
+        the email’s instructions.
+    </string>
+
+
+    //Sign In Screen
+    <string name="signIn">Sign In</string>
+    <string name="emailAddress_text">Email Address</string>
+    <string name="sampleEmail_text">markdavis@gmail.com</string>
+    <string name="password_text">Password</string>
+    <string name="passDemo_text">•••••••••</string>
+    <string name="nextButton_text">NEXT</string>
+    <string name="forgotPass_text">I forgot my password</string>
+
+    //Forgot Password Screen
+    <string name="resetPass">Reset Password</string>
+    <string name="resetPassInfo">
+        Please enter the email address that you used\n
+        to register with us and we’ll send you the \n
+        instructions on how to reset your password
+    </string>
+    <string name="sendButton">SEND</string>
+
+</resources>

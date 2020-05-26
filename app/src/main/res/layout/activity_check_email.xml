@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".CheckEmail">
+    <RelativeLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/checkMailToolbar"
+                layout="@layout/toolbar"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/toolbarLayout"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:layout_width="192dp"
+                android:layout_height="191dp"
+                android:src="@drawable/mailbox" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/check_mail"
+                android:textAlignment="center"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="21sp"
+                android:textColor="#212121" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="48dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/email_sent"
+                android:fontFamily="@font/oxygen_regular"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="#212121" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:gravity="center"
+        android:paddingVertical="20dp">
+        <Button
+            android:id="@+id/checkEmailNextButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/primary_button"
+            android:text="@string/login"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</RelativeLayout>
