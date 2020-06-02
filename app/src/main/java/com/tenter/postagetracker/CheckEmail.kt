@@ -1,3 +1,4 @@
+//Powered by Tenter
 package com.tenter.postagetracker
 
 import android.content.Intent
@@ -14,12 +15,13 @@ class CheckEmail : AppCompatActivity() {
         //Action Bar Action
         setSupportActionBar(findViewById(R.id.checkMailToolbar))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
 
         //Navigation
-        val button = findViewById<Button>(R.id.checkEmailNextButton);
+        val button = findViewById<Button>(R.id.checkEmailNextButton)
         button.setOnClickListener {
-            val intent = Intent(this, SignIn::class.java);
-            startActivity(intent);
+            val intent = Intent(this, SignIn::class.java)
+            startActivity(intent)
         }
     }
 

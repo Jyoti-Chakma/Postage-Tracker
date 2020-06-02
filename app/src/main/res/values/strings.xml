@@ -1,10 +1,17 @@
 <resources>
+
+    //All String is stored here.
+    //Just Customize the Name Value to Change the Strings
+    //This Software is Developed by Tenter
+    //For any kinds of Software, Just Contact at develepers.tenter@gmail.com
+
     <string name="app_name">Postage Tracker</string>
     <string name="register">Register</string>
     <string name="alreadySignIn">Already have an account? Sign In</string>
     <string name="verify">Verify Mobile</string>
     <string name="enterToVerify">Enter the Verification code was sent to:</string>
-    <string name="mobileNumber">+61 491 570 156</string>
+    <string name="mobileNumber">491 570 156</string>
+    <string name="phone">+61 491 570 156</string>
     <string name="resendText">Resend Code</string>
     <string name="next">Next</string>
     <string name="accountInfo">Account Info</string>
@@ -27,23 +34,108 @@
         the email’s instructions.
     </string>
 
-
     //Sign In Screen
     <string name="signIn">Sign In</string>
     <string name="emailAddress_text">Email Address</string>
     <string name="sampleEmail_text">markdavis@gmail.com</string>
     <string name="password_text">Password</string>
-    <string name="passDemo_text">•••••••••</string>
     <string name="nextButton_text">NEXT</string>
     <string name="forgotPass_text">I forgot my password</string>
 
     //Forgot Password Screen
     <string name="resetPass">Reset Password</string>
     <string name="resetPassInfo">
-        Please enter the email address that you used\n
-        to register with us and we’ll send you the \n
-        instructions on how to reset your password
+        Please enter the email address that you used to register with us and we’ll send you the instructions on how to reset your password
     </string>
     <string name="sendButton">SEND</string>
+
+
+    //Dashboard Strings
+    <string name="postages">Postages</string>
+    <string name="queryHint">Search for a Postage</string>
+    <string name="current">Current</string>
+    <string name="item1">RZQ5071034</string>
+    <string name="item1Sub">Departed Sorting Facility</string>
+    <string name="item1Sub2">Delivered by: Tomorrow 13:00</string>
+    <string name="item2Sub2">Delivered by: Nov 15:01:00</string>
+    <string name="item2">HKTUO3385956</string>
+    <string name="item3">AZQ5071034</string>
+    <string name="item4">TENTER2020</string>
+    <string name="transit">IN TRANSIT</string>
+    <string name="pending">PENDING</string>
+    <string name="past">Past</string>
+    <string name="delivered">DELIVERED</string>
+    <string name="delivery">Delivered</string>
+
+    //Manage Account Strings
+    <string name="account">Account</string>
+    <string name="name">Mark Andrew Davis</string>
+    <string name="address">ADDRESS</string>
+    <string name="addressLine">3 Doris St, North Sydney,\n
+        NSW 2060
+    </string>
+    <string name="emailText">EMAIL ADDRESS</string>
+    <string name="emailAddressLine">markandrew@gmail.com</string>
+    <string name="mobile">MOBILE</string>
+    <string name="passText">PASSWORD</string>
+    <string name="changePass">Change Password</string>
+    <string name="verifyMobile">Verify Mobile</string>
+
+    //Edit Account String
+    <string name="save">Save</string>
+    <string name="currentPass">Current Password</string>
+    <string name="newPass">New Password</string>
+    <string name="edit">Edit Account</string>
+
+    //New Postage String
+    <string name="newPostage">New Postage</string>
+    <string name="receiptInfo">Receipient Information</string>
+    <string name="nameText">Name</string>
+    <string name="submit">Submit</string>
+    <string name="fromLocation">86 Devon Street, Australia</string>
+    <string name="drop">Drop off Location</string>
+    <string name="toLocation">Search Your Location</string>
+
+    //Print or Pay Strings
+    <string name="created">New Postage Created</string>
+    <string name="print">Print</string>
+    <string name="pay">Pay</string>
+    <string name="createdText">Lorem ipsum dolor sit amet, consectetur\n
+                adipiscing elit. Pellentesque
+    </string>
+
+    //Details Strings
+    <string name="startDate">Nov 5, 2019</string>
+    <string name="endDate">Nov 15, 2019</string>
+    <string name="deliveredDate">Nov 09, 2019</string>
+    <string name="history">History</string>
+    <string name="date1">15 Nov 2019 – 12:16</string>
+    <string name="date1Detail">Your package is out for delivery. Keep your\n
+        lines open so the delivery associate from\n
+        LEX PH can contact you upon delivery.</string>
+    <string name="date2">07 Nov 2019 – 11:24</string>
+    <string name="date2Detail">Your package has been inbounded at the\n
+        logistics facility.</string>
+    <string name="date3">05 Nov 2019 – 08:17</string>
+    <string name="date3Detail">Your package has been packed and is being\n
+        handed over to our logistics partner</string>
+    <string name="date4">09 Nov 2019 – 10:00</string>
+    <string name="date4Detail">Your package has been delivered successfully</string>
+    <string name="reset">An Email was sent to your Email\n
+        on how to reset your password</string>
+
+    //Validation
+    <string name="valid1">Enter Mobile Number</string>
+    <string name="validEmail">Enter Email Address</string>
+    <string name="enterPass">Enter Password</string>
+    <string name="reEnterPass">Re-Enter Password</string>
+    <string name="validName">This is a required field</string>
+    <string name="validPass">Password doesn\'t match</string>
+    <string name="invalidCode">Invalid code please try again.</string>
+    <string name="matchPass">Password doesn\'t match</string>
+    <string name="resend">Code was Sent</string>
+    <string name="enterCode">Enter the Code Please</string>
+    <string name="enterFirstName">Enter Your First Name</string>
+    <string name="enterLastName">Enter Your Last Name</string>
 
 </resources>

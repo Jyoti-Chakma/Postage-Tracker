@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:background="#fff"
@@ -23,30 +24,76 @@
             android:text="@string/app_name"
             android:layout_marginVertical="10dp"
             android:gravity="center"
-            android:fontFamily="@font/inter_regular"
+            android:fontFamily="@font/inter_extra_bold"
             android:textColor="#4A4A4A"
             android:textSize="20sp"/>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="50dp"
-            android:layout_marginTop="80dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/mobileText"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="50dp"
                 android:fontFamily="@font/inter_bold"
-                android:textSize="18sp"
-                android:textColor="#212121"
-                android:layout_marginBottom="10dp"/>
+                android:textColor="#212121" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:weightSum="20"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_edittext"
+            android:orientation="horizontal">
+            <com.hbb20.CountryCodePicker
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/country_code_background"
+                android:gravity="center"
+                app:ccp_defaultNameCode="AU"
+                app:ccp_autoDetectCountry="true"
+                app:ccpDialog_showFlag="false"
+                app:ccpDialog_showCloseIcon="true"
+                app:ccp_showArrow="false"
+                app:ccp_showNameCode="false"
+                app:ccp_textSize="18sp"
+                app:ccp_showFlag="false" />
             <EditText
-                android:layout_width="match_parent"
+                android:id="@+id/phoneNumber"
+                android:layout_weight="15"
+                android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:background="@drawable/custom_edittext"
                 android:inputType="phone"
+                android:textSize="18sp"
                 android:paddingHorizontal="10dp"
                 android:hint="@string/mobileNumber"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/numberError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/error"
+                android:layout_marginEnd="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/valid1"
+                android:fontFamily="@font/inter_regular"
+                android:textSize="14sp"
+                android:textColor="#DF1642"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -57,10 +104,10 @@
             android:id="@+id/registerButton"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-                android:layout_marginHorizontal="50dp"
+            android:layout_marginHorizontal="50dp"
             android:text="@string/register"
             android:fontFamily="@font/inter_bold"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:textSize="16sp"
             android:textColor="#fff"
             android:background="@drawable/primary_button"/>

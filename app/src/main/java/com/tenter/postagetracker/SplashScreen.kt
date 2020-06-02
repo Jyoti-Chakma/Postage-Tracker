@@ -1,14 +1,13 @@
+//Powered by Tenter
 package com.tenter.postagetracker
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.view.View
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 
 class SplashScreen : AppCompatActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
@@ -18,12 +17,12 @@ class SplashScreen : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
-        //5 Second Stay Here
+        //3 Second Stay Here
         Handler().postDelayed({
-            //start main activity
+            //Start Main Activity
             startActivity(Intent(this, MainActivity::class.java))
-            //finish this activity
-            finish();
-        },5000)
+            //fFinish Splash Screen Activity
+            finish()
+        },3000)
     }
 }

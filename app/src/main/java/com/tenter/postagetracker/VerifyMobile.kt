@@ -1,10 +1,13 @@
+//Powered by Tenter
 package com.tenter.postagetracker
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
-import kotlinx.android.synthetic.main.activity_verify_mobile.*
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.chaos.view.PinView
 
 class VerifyMobile : AppCompatActivity() {
 
@@ -15,12 +18,30 @@ class VerifyMobile : AppCompatActivity() {
         //Action Bar Action
         setSupportActionBar(findViewById(R.id.toolbar))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.setDisplayShowTitleEnabled(false)
+
+        //Findings
+        val button = findViewById<Button>(R.id.verifyNextButton)
+        val pin = findViewById<PinView>(R.id.pinId)
+        val layout = findViewById<View>(R.id.pinError)
+        val textButton = findViewById<TextView>(R.id.resendButton)
+        val resendLayout = findViewById<View>(R.id.resendCode)
 
         //Navigation
-        val button = findViewById<Button>(R.id.verifyNextButton);
         button.setOnClickListener {
-            val intent = Intent(this, AccountInfo::class.java);
-            startActivity(intent);
+            if (pin?.text.toString().trim().isNotEmpty() ||
+                pin?.text.toString().trim().isNotBlank()) {
+                //Coding
+                layout.visibility  = View.INVISIBLE
+                val intent = Intent(this, AccountInfo::class.java)
+                startActivity(intent)
+            } else {
+                layout.visibility  = View.VISIBLE
+            }
+        }
+
+        textButton.setOnClickListener {
+            resendLayout.visibility = View.VISIBLE
         }
     }
 
